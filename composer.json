@@ -1,0 +1,12 @@
+{
+    "name": "lijin654123/mvc",
+    "description": "self mvc",
+    "type": "project",
+    "authors": [
+        {
+            "name": "jin",
+            "email": "3318955013@qq.com"
+        }
+    ],
+    "require": {}
+}
