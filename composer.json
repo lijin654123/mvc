@@ -8,5 +8,6 @@
             "email": "3318955013@qq.com"
         }
     ],
+    "minimum-stability": "stable",
     "require": {}
 }
