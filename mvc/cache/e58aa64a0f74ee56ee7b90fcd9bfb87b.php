@@ -1,1 +1,1 @@
-<div><?=$head;?></div>
+<div class="w400"><?=$head;?></div>

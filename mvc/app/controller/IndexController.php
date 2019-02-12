@@ -20,6 +20,5 @@ class IndexController extends Controller
         $this->assign('title', $title);
         $this->assign('data', $data);
         $this->display('index/index.html');
-
     }
 }

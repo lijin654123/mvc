@@ -1,7 +1,7 @@
 <?php
 namespace controller;
 
-use \framework\Tpl;
+use framework\Tpl;
 
 /**
  *

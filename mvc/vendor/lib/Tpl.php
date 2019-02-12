@@ -56,13 +56,13 @@ class Tpl
         $cachePath = rtrim($this->cacheDir, '/') . '/' . $cacheName;
         //判断缓存文件是否存在，过期，被修改
         if (!file_exists($cachePath)) {
-            $php = $this->complie($viewPath);
+            $php = $this->compile($viewPath);
             file_put_contents($cachePath, $php);
         } else {
             $isTimeout = (filectime($cachePath) + $this->lifeTime) > time() ? false : true;
             $isChange = filemtime($cachePath) > filemtime($viewPath) ? false : true;
             if ($isTimeout || $isChange) {
-                $php = $this->complie($viewPath);
+                $php = $this->compile($viewPath);
                 file_put_contents($cachePath, $php);
             }
         }
@@ -74,7 +74,7 @@ class Tpl
 
     }
 
-    protected function complie($filePath)
+    protected function compile($filePath)
     {
         $html = file_get_contents($filePath);
         $arr = [
@@ -100,7 +100,7 @@ class Tpl
     protected function parseInclude($data)
     {
         $fileName = trim($data[1], '\'"');
-        echo $fileName;
+        // echo $fileName;
         $this->display($fileName, false);
         $cacheName = md5($fileName) . '.php';
         $cachePath = rtrim($this->cacheDir, '/') . '/' . $cacheName;

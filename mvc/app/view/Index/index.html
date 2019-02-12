@@ -2,12 +2,18 @@
 <html lang="en">
 <head>
  <meta charset="UTF-8">
+ <link rel="stylesheet" href="public/css/common.css">
  <title>{$title}</title>
 </head>
 <body>
- {include index/head.html}
- {foreach $data as $value}
-  {$value}<br>
- {/foreach}
+ <div class="w400">
+  include 包含的文件
+  {include index/head.html}
+ </div>
+ <div class="w500">
+  {foreach $data as $value}
+   {$value}<br>
+  {/foreach}
+ </div>
 </body>
 </html>
