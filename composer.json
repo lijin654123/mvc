@@ -1,10 +1,10 @@
 {
-    "name": "lijin654123/mvc",
-    "description": "self mvc",
+    "name": "lijin/mvc",
+    "description": "The first test project",
     "type": "project",
     "authors": [
         {
-            "name": "jin",
+            "name": "lijin",
             "email": "3318955013@qq.com"
         }
     ],
