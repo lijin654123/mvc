@@ -1,6 +1,6 @@
 <?php
 namespace controller;
-
+use framework\Db;
 /**
  *
  */
@@ -13,6 +13,7 @@ class IndexController extends Controller
     }
     public function index()
     {
+        $Db=new Db();
         $head = 'head';
         $title = 'tpl';
         $data = ['wonderful', 'world'];
